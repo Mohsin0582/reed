@@ -1,38 +1,177 @@
-.App {
-  text-align: center;
-}
+/* @tailwind base;
+@tailwind utilities;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@layer base {
+  :root {
+    --primary-color: #081351;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  * {
+    box-sizing: border-box;
   }
-  to {
-    transform: rotate(360deg);
+
+  body,
+  html {
+    @apply min-h-screen;
+    line-height: 1.5;
+    font-size: 16px;
   }
-}
+  
+  body {
+    @apply bg-white  overflow-x-hidden;
+    font-family: "Red Hat Text",sans-serif;
+  }
+  
+
+  a {
+    color: #1e1ef0;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+    background-color: transparent;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+
+  label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+  }
+
+  .form-control {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 44px;
+    padding: 8px 12px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #0f151a;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #0f151a;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  }
+
+  #global {
+    overflow-x: hidden;
+    background: #f8f8f8;
+    min-height: 100%;
+  }
+
+  .flexbox #container {
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  #container {
+    position: relative;
+    z-index: 2;
+    min-height: 100%;
+  }
+
+  .btn {
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    text-align: center;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+
+    font-size: 16px;
+    font-family: "Red Hat Text",sans-serif;
+    font-weight: 500;
+    background: #fff;
+    color: #0f151a;
+    transition: background-color .3s ease-in;
+    border: 1px solid transparent;
+    height: 2.625rem;
+    box-sizing: border-box;
+    margin: 0 auto 20px;
+    display: block;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .href.btn, 
+  a.btn {
+    text-decoration: none;
+  }
+
+  .btn-secondary {
+    color: var(--primary-color);
+    background-color: #fff;
+    border-color: var(--primary-color);
+    transition: background-color .3s ease-in;
+    font-weight: 500;
+    border: 2px solid var(--primary-color);
+  }
+
+  .row {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .row:after, 
+  .row:before {
+    content: " ";
+    display: table;
+  }
+
+  .container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .container:after {
+    clear: both;
+  }
+
+  .container:after, 
+  .container:before {
+    content: " ";
+    display: table;
+  }
+
+  .top-section:after, .top-section:before {
+    content: " ";
+    display: table;
+  }
+
+  @media screen and (min-width: 1025px){
+    #container {
+      padding-top: 0!important;
+    }
+  }
+
+} */

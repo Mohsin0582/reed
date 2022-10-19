@@ -1,0 +1,315 @@
+/* @tailwind components;
+
+@layer components {
+    .main-search-container {
+        position: relative;
+        padding: 30px 15px;
+        text-align: center;
+        color: #fff;
+        background-image: url('~/public/img/homepage-banner-mobile-2021.jpg');
+        background-position: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    .main-search-container.jubilee-background.jubilee-background-image {
+        background-image: url('~/public/img/MONDAY_Landscape.png');
+    }
+
+    .main-search-container.jubilee-background {
+        background-color: #ff00cd;
+    }
+
+    .main-search-container.jubilee-background .jubilee-text {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+
+    .main-search-container.jubilee-background .jubilee-text span {
+        font-family: "Red Hat Text",sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        color: #fff;
+        width: -webkit-fit-content;
+        width: fit-content;
+    }
+
+    .main-search-container .h1-container {
+        margin: 0 auto;
+        max-width: 1080px;
+        padding: 0 65px;
+    }
+
+    .main-search-container.jubilee-background .h1-container {
+        display: none;
+    }
+
+    .main-search-container .h1-title-new {
+        height: 85px;
+        margin: 0 0 auto;
+        display: block;
+        margin-top: 20px;
+        background-image: url('~/public/svg/love-mondays-mobile-new-2021.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .main-search-container .h1-slogan {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1px;
+        text-indent: -99999px;
+    }
+
+    .main-search {
+        margin: 0 auto;
+        padding: 0;
+        position: relative;
+        max-width: 1080px;
+        width: 100%;
+    }
+
+    .main-search .row {
+        margin: 0;
+    }
+
+    .main-search .job-counter {
+        padding: 10px 15px 0;
+        position: relative;
+        margin: 0;
+    }
+
+    .main-search .row>div {
+        padding: 15px 0;
+        position: relative;
+    }
+
+    .form-submit, 
+    .keywords-container, 
+    .location-container {
+        margin-bottom: 20px;
+    }
+
+    .keywords-container label, .location-container label {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 3px;
+        color: #fff;
+    }
+
+    .form-submit .twitter-typeahead, 
+    .form-submit button, 
+    .form-submit input, 
+    .keywords-container 
+    .twitter-typeahead, 
+    .keywords-container button, 
+    .keywords-container input, 
+    .location-container .twitter-typeahead, 
+    .location-container button, 
+    .location-container input {
+        width: 100%;
+        max-width: 100%!important;
+        border-radius: 4px;
+    }
+
+    .twitter-typeahead>input.tt-hint, 
+    .twitter-typeahead>input.tt-input {
+        width: 100%!important;
+    }
+
+    .keywords-container input, 
+    .location-container input {
+        padding-right: 45px;
+    }
+
+    .form-control {
+        height: 42px;
+        padding: 10px 15px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #0f151a;
+        transition: all .2s ease-in;
+    }
+
+    .twitter-typeahead>.tt-menu {
+        box-sizing: border-box;
+        width: 100%;
+        background: #fff;
+        border: 2px solid #081351;
+        margin: -3px 0 0;
+        border-radius: 0 0 4px 4px;
+    }
+
+    .tt-menu .tt-dataset, .tt-menu div[class^=tt-dataset-], 
+    .twitter-typeahead .tt-menu .tt-dataset, 
+    .twitter-typeahead .tt-menu div[class^=tt-dataset-] {
+        margin: 0;
+    }
+
+    .tt-menu, .twitter-typeahead .tt-menu {
+        border: 2px solid #081351;
+        border-radius: 0 0 4px 4px;
+        background: #f3f3fe;
+        border-top: none;
+    }
+
+    .twitter-typeahead {
+        display: block!important;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        height: 42px;
+        margin: 0;
+        background: #fff;
+    }
+
+    #homepage .icon-clean-input, #homepage .icon-target-location {
+        border: 0;
+        margin: 0;
+        width: 22px;
+        height: 22px;
+        background-color: transparent;
+    }
+
+    #homepage .icon-clean-input {
+        position: absolute;
+    }
+
+    @media screen and (min-width: 768px){
+        .main-search-container.jubilee-background.jubilee-background-image {
+            background-size: 651.75px 272px;
+            background-position-y: -21px;
+            background-position-x: calc((100vw - 1080px)/ 2);
+        }
+
+        .main-search-container {
+            margin: 0 auto;
+            text-align: left;
+            padding: 0 0 10px 0;
+            border-bottom: none;
+            background-position: 50%;
+        }
+
+        .main-search-container.jubilee-background .jubilee-text span {
+            font-size: 2rem;
+            line-height: 44px;
+        }
+
+        .main-search-container .h1-title-new {
+            background-image: url('~/public/svg/love-mondays-2021.svg');
+            margin: 30px 0 0;
+            width: 408px;
+            height: 60px;
+            background-size: cover;
+        }
+
+        .main-search {
+            padding: 0 30px;
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            width: 750px;
+        }
+
+        .main-search .job-counter {
+            margin-bottom: 10px;
+            padding: 0 35px;
+            top: -5px;
+        }
+
+        .main-search .row>div {
+            margin-bottom: 20px;
+        }
+
+        .main-search .row > div:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #081351;
+            z-index: 0;
+            border-radius: 10px;
+        }
+
+        .keywords-container, .location-container {
+            padding-right: 0;
+            margin-bottom: 0;
+        }
+
+        .keywords-container {
+            padding-left: 25px;
+        }
+
+        .keywords-container label, .location-container label {
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        .horizontal-form .twitter-typeahead {
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+        }
+
+        .twitter-typeahead {
+            display: block!important;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            height: 42px;
+            margin: 0;
+            background: #fff;
+        }
+
+        #homepage .icon-clean-input {
+            right: 10px;
+            top: 43px;
+        }
+    }
+
+
+    @media screen and (min-width: 768px) and (min-width: 768px) and (max-width: 1079.9px){
+        .main-search-container.jubilee-background.jubilee-background-image {
+            background-position-x: center;
+        }
+
+        .main-search-container.jubilee-background .jubilee-text {
+            margin-left: 30px;
+            margin-top: 180px;
+            margin-bottom: 15px;
+        }
+
+        .main-search-container .h1-title-new {
+            background-image: url('~/public/svg/love-mondays-2021.svg');
+            margin: 30px 0 0;
+            width: 408px;
+            height: 60px;
+            background-size: cover;
+        }
+
+        .main-search-container.jubilee-background .job-counter {
+            padding-left: 0;
+        }
+    }
+
+    @media screen and (min-width: 1025px){
+        .main-search-container-margin-top {
+            margin-top: 60px;
+        }
+
+        .main-search-container .h1-title-new {
+            margin: 60px 0 0;
+            width: 550px;
+            height: 75px;
+            background-size: cover;
+        }
+    }
+} */

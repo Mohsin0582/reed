@@ -1,0 +1,297 @@
+@tailwind components;
+
+@layer components {
+    /*
+    #site-header {
+        position: relative;
+        height: 50px;
+        background-color: #fff;
+        border-bottom: solid 1px #c8c8c8;
+        z-index: 3;
+    }
+
+    .header-inner {
+        position: relative;
+        width: w-full;
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    #site-header:after, 
+    #site-header:before {
+        content: " ";
+        display: table;
+    }
+
+    .header-inner:after {
+        clear: both;
+    }
+
+    .header-inner:before {
+        content: " ";
+        display: table;
+    }
+
+    .menu-button {
+        display: block;
+        padding: 0;
+        width: 50px;
+        height: 50px;
+    }
+
+    .header-block-link {
+        display: block;
+        padding: 0 8px;
+        height: 50px;
+        line-height: 50px;
+        vertical-align: middle;
+        float: left;
+        color: #0f151a;
+    }
+
+    .menu-button span {
+        height: 2px;
+        width: 16px;
+        background: var(--primary-color);
+        position: absolute;
+        display: block;
+        left: 18px;
+        top: 24px;
+        text-indent: -999em;
+    }
+
+    .menu-button span:before {
+        height: 2px;
+        width: 16px;
+        background: #081351;
+        position: absolute;
+        display: block;
+        content: '';
+        left: 0;
+        top: -4px;
+    }
+
+    .menu-button span:after {
+        height: 2px;
+        width: 16px;
+        background: #081351;
+        position: absolute;
+        display: block;
+        content: '';
+        top: 4px;
+        left: 0;
+    }
+
+    .reed-logo {
+        padding: 0 15px 0 7.5px;
+    }
+
+    .svg #site-header .reed-logo span {
+        background-size: 1380px 1380px;
+        -webkit-background-size: 1380px 1380px;
+        background-repeat: no-repeat;
+        background-image: url("~/public/svg/icon-sprite-1666078328507.svg");
+    }
+
+    
+    .svg #site-header .saved-jobs .outline-heart-grey {
+        background-size: 1380px 1380px;
+        -webkit-background-size: 1380px 1380px;
+        background-repeat: no-repeat;
+        background-image: url("~/public/svg/icon-sprite-1666078328507.svg");
+    }
+
+    .reed-logo span {
+        vertical-align: middle;
+        text-indent: -999em;
+        content: '';
+        text-indent: -999em;
+        display: inline-block;
+        vertical-align: middle;
+        overflow: hidden;
+        width: 116px;
+        height: 30px;
+        background-position: -270px -390px;
+    }
+
+    ul.main-navigation {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        float: left;
+        height: 50px;
+    }
+
+    ul.main-navigation > li {
+        psoition: relative;
+        transition: background-color .2s ease-in;
+    }
+
+     ul.main-navigation > li.active:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        border-bottom: 4px solid #ff00cd;
+        bottom: 0;
+        margin: 0 auto;
+        display: block;
+    }
+
+    ul.main-navigation > li a {
+        border-bottom: solid 1px #c8c8c8;
+    }
+
+    ul.main-navigation .recruiter:before {
+        content: '';
+        width: 1px;
+        height: 60%;
+        background-color: #c8c8c8;
+        top: 20%;
+        left: 0;
+        position: absolute;
+    }
+
+    ul.main-navigation .recruiter a {
+        font-weight: 400;
+    }
+
+    ul.main-navigation .recruiter b {
+        font-weight: 500;
+    }
+
+    .jobs {
+        display: none;
+    }
+
+    .right-container {
+        position: relative;
+        right: 0;
+    }
+
+    .user-navigation {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        float: right;
+    }
+
+    .user-navigation > li {
+        transition: background-color .2s ease-in;
+        float: left;
+    }
+
+    .signed-out-user {
+        padding-top: 12px;
+        margin-right: 10px;
+    }
+
+    .register-cv {
+        height: 60%;
+        line-height: 32px;
+        width: 124px;
+        padding: 0 12px;
+    }
+
+    .sign-in {
+        display: inline-block;
+    }
+
+    .saved-jobs > a {
+        position: relative;
+        padding-left: 25px;
+    }
+
+    .saved-jobs .outline-heart-grey {
+        width: 16px;
+        height: 15px;
+        background-position: -360px -1080px;
+    }
+
+    .saved-jobs .heart-hasjob, 
+    .saved-jobs .heart-nojob, 
+    .saved-jobs .outline-heart-grey {
+        content: '';
+        text-indent: -999em;
+        display: inline-block;
+        vertical-align: middle;
+        overflow: hidden;
+        position: absolute;
+        top: 18px;
+        left: 10px;
+    } */
+
+    /* @media screen and (min-width: 768px){
+        .jobs, 
+        .register {
+            display: inline-block;
+        }
+
+        .signed-out-user {
+            padding-top: 7px;
+        }
+
+        .saved-jobs > a {
+            padding-left: 38px;
+        }
+
+        .saved-jobs .heart-hasjob, 
+        .saved-jobs .heart-nojob, 
+        .saved-jobs .outline-heart-grey {
+            left: 12px;
+            top: 19px;
+        }
+    } */
+
+    /* @media screen and (min-width: 1025px){
+        #site-header {
+            @apply fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        .header-background {
+            @apply absolute h-60 w-full;
+        }
+
+        .menu-button {
+            display: none;
+            height: 60px;
+            width: 60px;
+        }
+
+        .header-block-link {
+            height: 60px;
+            line-height: 60px;
+        }
+
+        .reed-logo {
+            padding: 0 15px;
+        }
+
+        ul.main-navigation {
+            height: 60px;
+        }
+
+        .career-advice, 
+        .courses,
+        .recruiter {
+            display: inline-block;
+        }
+
+        .signed-out-user {
+            padding-top: 12px;
+        }
+
+        .saved-jobs > a {
+            padding-left: 40px;
+        }
+
+        .saved-jobs .heart-hasjob,
+        .saved-jobs .heart-nojob,
+        .saved-jobs .outline-heart-grey {
+            top: 23px;
+        }
+    } */
+}
